@@ -16,6 +16,7 @@ Frontend Mentor challenges help improve coding skills by building real-world pro
 ## 🔗 Live Demo
 
 - Solution: https://github.com/sreyatheresa/blog-preview-card
+- Live page URL:https://sreyatheresa.github.io/blog-preview-card/
 
 ---
 
