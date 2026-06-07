@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: 'Figtree', system-ui, sans-serif;
+      background-color: hsl(47, 88%, 63%);
+      color: hsl(0, 0%, 7%);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      background-color: hsl(47, 88%, 63%);
+    }
+
+    main {
+      width: min(100%, 340px);
+    }
+
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+    }
+
+    .card-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.75rem;
+    }
+
+    .card-label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.75rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 999px;
+      background-color: hsl(47, 88%, 63%);
+      color: black;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+
+    .card-meta {
+      margin: 0 0 1rem;
+      font-size: 0.8125rem;
+      color: hsl(0, 0%, 42%);
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      font-size: 1.6rem;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      font-weight: 800;
+    }
+
+    h1:hover {
+      color: hsl(47, 88%, 63%);
+    }
+
+    .card-content p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.75;
+      color: hsl(0, 0%, 42%);
+    }
+
+    .card-content p + .card-author {
+      margin-top: 1.5rem;
+    }
+
+    .card-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .author-avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid hsl(0, 0%, 100%);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+
+    .author-name {
+      margin: 0;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: hsl(0, 0%, 7%);
+    }
+
+    .attribution {
+      margin-top: 2rem;
+      font-size: 0.6875rem;
+      text-align: center;
+      color: hsl(0, 0%, 7%);
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+
+    .attribution a:hover,
+    .attribution a:focus-visible {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        padding: 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+  <article class="card">
+    <img class="card-image" src="./assets/images/illustration-article.svg" alt="Illustration of an article">
+    <div class="card-content">
+      <span class="card-label">Learning</span>
+      <p class="card-meta">Published 21 Dec 2023</p>
+      <h1>HTML & CSS foundations</h1>
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="card-author">
+        <img class="author-avatar" src="./assets/images/image-avatar.webp" alt="Greg Hooper">
+        <p class="author-name">Greg Hooper</p>
+      </div>
+    </div>
+  </article>
+</main>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Sreya Theresa</a>.
+  </footer>
+</body>
+</html>
